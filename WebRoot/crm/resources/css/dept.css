@@ -1,0 +1,130 @@
+.dept_table{
+    background-image: url(../img/dept_table.png) !important;
+}
+.dept_tree{
+    background-image: url(../img/dept_tree.png) !important;
+}
+.table_remove{
+	background-image: url(../img/table_remove.gif) !important;
+}
+.table_add{
+	background-image: url(../img/table_add.png) !important;
+}
+.table_save{
+	background-image: url(../img/save.png) !important;
+}
+.menu_delete{
+	background-image: url(../img/delete.gif) !important;
+}
+.menu_edit{
+	background-image: url(../img/edit.png) !important;
+}
+.menu_replay{
+	background-image: url(../img/replay.png) !important;
+}
+.menu_view{
+	background-image: url(../img/view.png) !important;
+}
+.menu_type{
+	background-image: url(../img/typeName.png) !important;
+}
+.input_type{
+	background-image: url(../img/typeInputName.png) !important;
+	background-image: url(../img/typeInputName.png);
+	BACKGROUND-REPEAT: no-repeat;
+	background-position: right;
+}
+.button_ok{
+	background-image: url(../img/ok.png) !important;
+}
+.button_cancel{
+	background-image: url(../img/cancel.gif) !important;
+}
+.email{
+	background-image: url(../img/email.png) !important;
+}
+.email_edit{
+	background-image: url(../img/email_edit.png) !important;
+}
+.email_open{
+	background-image: url(../img/email_open.png) !important;
+}
+.email_go{
+	background-image: url(../img/email_go.png) !important;
+}
+.email_received{
+	background-image: url(../img/email_received.png) !important;
+}
+.email_receiver{
+	background-image: url(../img/receiver.gif) !important;
+	background-image: url(../img/receiver.gif);
+	BACKGROUND-REPEAT: no-repeat;
+	background-position: right;
+}
+.user{
+	background-image: url(../img/user.gif) !important;
+}
+.edit_userInfo_red{
+	background-image: url(../img/edit_user_info_red.gif) !important;
+}
+.edit_userInfo_blue{
+	background-image: url(../img/edit_user_info_blue.gif) !important;
+}
+.key{
+	background-image: url(../img/key.png) !important;
+}
+.article{
+	background-image: url(../img/article.gif) !important;
+}
+.userManger{
+	background-image: url(../img/userManger.gif) !important;
+}
+.addUser{
+	background-image: url(../img/addUser.png) !important;
+}
+.addArticleType{
+	background-image: url(../img/addArticleType.png) !important;
+}
+.deleteArticleType{
+	background-image: url(../img/deleteArticleType.png) !important;
+}
+.editArticleType{
+	background-image: url(../img/editArticleType.png) !important;
+}
+.my_refresh{
+	background-image: url(../img/refresh.gif) !important;
+}
+/**评审管理**/
+.my_folder{
+	background-image: url(../img/folder.png) !important;
+}
+.mange_replay{
+	background-image: url(../img/mang_replay.png) !important;
+}
+.my_replay{
+	background-image: url(../img/show_Replay.gif) !important;
+}
+.replay_arctile{
+	background-image: url(../img/replay_article.png) !important;
+}
+.add_replay{
+	background-image: url(../img/add_Replay.gif) !important;
+}
+.delete_replay{
+	background-image: url(../img/delete_replay.gif) !important;
+}
+.edit_replay{
+	background-image: url(../img/edit_replay.gif) !important;
+}
+.redColor{
+	color:red
+}
+.x-grid-cell.sending{
+    background-color: yellow !important;
+}
+.x-grid-cell.sendSuccess{
+    background-color: green !important;
+}
+.x-grid-cell.sendFailure{
+    background-color: red !important;
+}

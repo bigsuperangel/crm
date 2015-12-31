@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2012-9-11 17:26:21 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.crm.model.Privilege" table="t_priv">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="10"/>
+        </property>
+        <property name="icon" type="string">
+            <column name="icon" length="10"/>
+        </property>
+        <property name="expanded" type="boolean">
+            <column name="expanded"/>
+        </property>
+        <property name="index" type="java.lang.Integer">
+            <column name="indx" default="1"/>
+        </property>
+        <property name="config" type="string">
+            <column name="config"/>
+        </property>
+        
+        <many-to-one name="parent" column="p_id" lazy="false"/>
+        <!--
+        <set name="children" cascade="all" inverse="true" lazy="false" order-by="index">
+            <key>
+                <column name="p_id" length="11" not-null="true" />
+            </key>
+            <one-to-many class="com.ibeifeng.crm.model.Privilege" />
+        </set>
+        -->
+    </class>
+</hibernate-mapping>

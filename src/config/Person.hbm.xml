@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2012-9-11 17:26:21 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.crm.model.Person" table="t_person">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="20"/>
+        </property>
+        <property name="sex" type="int">
+            <column name="sex" length="1"/>
+        </property>
+        <property name="post" type="string">
+            <column name="post" length="10"/>
+        </property>
+        <property name="phone" type="string">
+            <column name="phone" length="15"/>
+        </property>
+        <property name="tel" type="string">
+            <column name="tel" length="15"/>
+        </property>
+        <property name="descr" type="string">
+            <column name="descr" length="50"/>
+        </property>
+        <property name="qq" type="string">
+            <column name="qq" length="50"/>
+        </property>
+        <property name="wangWang" type="string">
+            <column name="wang_wang" length="50"/>
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="50"/>
+        </property>
+        <property name="isValid" type="int" insert="false" >
+            <column name="is_valid" length="1"/>
+        </property>
+        
+        <many-to-one name="customer" column="c_id" lazy="false"/>
+    </class>
+</hibernate-mapping>

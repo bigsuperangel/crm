@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2012-9-11 17:26:21 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.crm.model.Cooperation" table="t_cooperate">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="cooperatorType" type="int">
+            <column name="cooperator_type" length="1"/>
+        </property>
+        <property name="status" type="int">
+            <column name="status" length="1"/>
+        </property>
+        <property name="isValid" type="int"  insert="false">
+            <column name="is_valid" length="1"/>
+        </property>
+        <property name="cdate" type="string" >
+            <column name="cdate" length="22"/>
+        </property>
+        <property name="opTime" type="string">
+            <column name="op_time" length="22"/>
+        </property>
+       
+        <many-to-one name="customer" column="customer_id" lazy="false"/>
+        <many-to-one name="submitor" column="submitor"/>
+        <many-to-one name="receiver" column="receiver"/>
+        <many-to-one name="submitDept" column="submit_dept_id"/>
+        <many-to-one name="targetDept" column="target_dept_id"/>
+    </class>
+</hibernate-mapping>

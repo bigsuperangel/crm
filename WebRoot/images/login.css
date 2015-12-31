@@ -1,0 +1,8 @@
+body		{margin:0px; font-size:12px; background-image:url(bg_login.png); background-position:bottom; background-repeat:repeat-x; background-color:#A2D5F0;}
+#dv		    {font-size:12px; margin-top:10px; margin-bottom:15px; width:270px}
+span		{color:white; text-decoration:none;}	
+#root		{background-image:url(login_root.png);}
+#main		{background-image:url(login_main.png);background-position:bottom;}
+.textbox	{width:180px}
+#dvs		{font-size:12px; margin-top:10px;margin-bottom:15px; width:225px;}
+#btLogin    {width:50px;height:25px;background-image:url(bg_button.png);}
