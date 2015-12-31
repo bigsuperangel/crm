@@ -1,1 +1,1 @@
-crm系统,采用ext4 ,springmvc开发,用于淘宝维权系统
+crm系统,采用ext4 ,springmvc开发,用于淘宝维权系统开发
