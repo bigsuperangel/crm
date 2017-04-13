@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2012-9-11 17:26:21 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.crm.model.Contact" table="t_contact">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="title" type="string">
+            <column name="title" length="20"/>
+        </property>
+        <property name="content" type="text">
+            <column name="content"/>
+        </property>
+        <property name="addr" type="string">
+            <column name="addr" length="50"/>
+        </property>
+        <property name="cdate" type="string">
+            <column name="cdate" length="20"/>
+        </property>
+        <property name="contactor" type="string">
+            <column name="contactor" length="20"/>
+        </property>
+        <property name="nextVisit" type="string">
+            <column name="next_visit" length="22"/>
+        </property>
+        <property name="supervisor" type="string">
+            <column name="supervisor" length="30"/>
+        </property>
+        <property name="customerStatus" type="string">
+            <column name="customer_status" length="100"/>
+        </property>
+        <property name="isValid" type="int" insert="false" >
+            <column name="is_valid" length="1"/>
+        </property>
+        
+        <many-to-one name="customer" column="c_id" lazy="false"/>
+        <many-to-one name="user" column="u_id"/>
+    </class>
+</hibernate-mapping>

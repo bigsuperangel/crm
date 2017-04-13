@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2012-9-11 17:26:21 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.crm.model.Apply" table="t_apply">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="cdate" type="string" update="false">
+            <column name="cdate" length="22"/>
+        </property>
+        <property name="status" type="int">
+            <column name="status" length="1"/>
+        </property>
+        <property name="opTime" type="string">
+            <column name="op_time" length="22"/>
+        </property>
+        <property name="remarks" type="string">
+            <column name="remarks" length="100"/>
+        </property>
+        
+        <many-to-one name="customer" column="customer_id" lazy="false" update="false"/>
+        <many-to-one name="applier" column="u_id" update="false"/>
+        <many-to-one name="auditor" column="auditor"/>
+    </class>
+</hibernate-mapping>

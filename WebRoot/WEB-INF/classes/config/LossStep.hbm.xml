@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2012-9-11 17:26:21 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.crm.model.LossStep" table="t_lossstep">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="cdate" type="string">
+            <column name="cdate" length="20"/>
+        </property>
+        <property name="content" type="string">
+            <column name="content" length="50"/>
+        </property>
+        
+        <many-to-one name="user" column="u_id"/>
+        <many-to-one name="outflow" column="o_id"/>
+    </class>
+</hibernate-mapping>
